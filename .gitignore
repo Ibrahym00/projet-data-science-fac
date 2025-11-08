@@ -1,0 +1,26 @@
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# Caches Python
+__pycache__/
+*.pyc
+
+# Fichiers IDE/OS
+.idea/
+.vscode/
+*.DS_Store
+.DS_Store?
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Données (généralement non suivies)
+data/raw/
+data/processed/
+
+# Modèles (généralement trop volumineux)
+models/*.pkl
+models/*.h5
+models/*.pth
