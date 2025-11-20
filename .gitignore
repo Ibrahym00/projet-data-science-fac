@@ -1,26 +1,63 @@
-# Environnements virtuels
-.venv/
+# ============================================
+# ENVIRONNEMENT VIRTUEL
+# ============================================
 venv/
 env/
+.venv/
 
-# Caches Python
+# ============================================
+# PYTHON
+# ============================================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Fichiers IDE/OS
-.idea/
-.vscode/
-*.DS_Store
-.DS_Store?
-
-# Notebooks
+# ============================================
+# JUPYTER
+# ============================================
 .ipynb_checkpoints/
 
-# Données (généralement non suivies)
-data/raw/
-data/processed/
+# ============================================
+# IDE
+# ============================================
+.vscode/
+.idea/
+*.swp
 
-# Modèles (généralement trop volumineux)
+# ============================================
+# SYSTÃˆME
+# ============================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================
+# DONNÃ‰ES
+# ============================================
+# Exclure donnÃ©es gÃ©nÃ©rÃ©es
+data/processed/*
+
+# Garder le dossier vide
+!data/processed/.gitkeep
+
+# ============================================
+# MODÃˆLES (lourds)
+# ============================================
 models/*.pkl
 models/*.h5
-models/*.pth
+models/*.joblib
+
+# Garder le dossier vide
+!models/.gitkeep
+
+# ============================================
+# SECRETS
+# ============================================
+.env
+.streamlit/secrets.toml
+
+# ============================================
+# LOGS
+# ============================================
+*.log
