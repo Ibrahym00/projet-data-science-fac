@@ -532,12 +532,22 @@ st.markdown("""
 def load_model():
     """Charge le modèle LightGBM et ses composants"""
     
-    model = joblib.load('../models/lightgbm_churn_final.pkl')
-    metadata = joblib.load('../models/model_metadata.pkl')
-    scaler = joblib.load('../models/scaler.pkl')
+    import os
+    
+    # Si on est dans app/, remonte d'un niveau
+    if os.path.exists('../models/lightgbm_churn_final.pkl'):
+        model_path = '../models/'
+
+    elif os.path.exists('models/lightgbm_churn_final.pkl'):
+        model_path = 'models/'
+    else:
+        raise FileNotFoundError("Dossier models/ introuvable")
+    
+    model = joblib.load(f'{model_path}lightgbm_churn_final.pkl')
+    metadata = joblib.load(f'{model_path}model_metadata.pkl')
+    scaler = joblib.load(f'{model_path}scaler.pkl')
     
     return model, metadata, scaler
-
 try:
     model, metadata, scaler = load_model()
     model_loaded = True
