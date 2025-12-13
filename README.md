@@ -127,7 +127,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Accessible sur `http://localhost:8501`
+Accessible sur `https://bank-churn-prediction-fac.streamlit.app/`
 
 ---
 
@@ -161,9 +161,9 @@ Accessible sur `http://localhost:8501`
 
 ## Équipe
 
-Ibrahim DABRE  : [LinkedIn](https://linkedin.com/in/ibrahim-konate)
-Aaron THEVA : [LinkedIn](https://linkedin.com/in/ibrahim-konate)
-Momar FALL  : [LinkedIn](https://linkedin.com/in/ibrahim-konate)
+Ibrahim DABRE  : [LinkedIn](https://www.linkedin.com/in/ibrahim-dabre10/)
+Aaron THEVA : [LinkedIn](https://www.linkedin.com/in/momar-awa-fall-306a9b396/)
+Momar FALL  : [LinkedIn](https://www.linkedin.com/in/aaron-vengadasalam-b05914314/)
 
 ---
 
